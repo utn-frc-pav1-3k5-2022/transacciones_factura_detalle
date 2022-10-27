@@ -14,7 +14,7 @@ namespace SistemaVentas.DataAccessLayer
     {
         internal bool Create(Factura factura)
         {
-            var string_conexion = "Data Source=.\\SQLEXPRESS;Initial Catalog=SistemaVentas;Integrated Security=true;";
+            var string_conexion = "Data Source=maquis;Initial Catalog=SistemaVentas_Lamuedra_78576;User ID=avisuales1;Password=Pav1#2020Maquis;";
 
             // Se utiliza para sentencias SQL del tipo “Insert/Update/Delete”
             SqlConnection dbConnection = new SqlConnection();
