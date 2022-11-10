@@ -166,12 +166,12 @@ namespace SistemaVentas.GUILayer
         {
             if (_cboArticulo.SelectedItem != null)
             {
-                var producto = (Producto)_cboArticulo.SelectedItem;
-                _txtPrecio.Text = producto.Precio.ToString("C");
+                var producto1 = (Producto)_cboArticulo.SelectedItem;
+                _txtPrecio.Text = producto1.Precio.ToString("C");
                 _txtCantidad.Enabled = true;
                 int cantidad = 0;
                 int.TryParse(_txtCantidad.Text, out cantidad);
-                _txtImporte.Text = (producto.Precio * cantidad).ToString("C");
+                _txtImporte.Text = (producto1.Precio * cantidad).ToString("C");
                 _btnAgregar.Enabled = true;
             }
             else
